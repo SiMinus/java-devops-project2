@@ -17,5 +17,17 @@
   </dependencies>
   <build>
     <finalName>java-web-project</finalName>
+    <plugins>
+          
+ 
+      //插入下面这个插件，问题就解决了。
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+      </plugin>
+ 
+    </plugins>
+
   </build>
 </project>
